@@ -1,0 +1,40 @@
+.social {
+    margin-left: 70px;
+}
+
+.social__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+}
+
+.social__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--color-text-light);
+    transition: background-color var(--time-trasform) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-brand)
+    }
+}
+
+.social__icon {
+    fill: currentColor;
+}

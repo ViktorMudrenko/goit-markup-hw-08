@@ -1,0 +1,38 @@
+.address {
+    font-style: normal;
+}
+
+
+.address__item{
+    &:not(:last-child) {
+    margin-bottom: 9px;
+    }
+}
+.address__link {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color var(--time-trasform) var(--timing-function);
+    
+    &:hover, 
+    &:focus {
+        color: var(--color-brand)
+    }
+}
+
+.address__contacts {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--time-trasform) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--color-brand)
+    }
+
+}

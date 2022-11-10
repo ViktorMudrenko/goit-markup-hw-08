@@ -1,0 +1,54 @@
+.mail-send {
+    margin-left: auto;
+}
+
+.mail-send__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+}
+
+.mail-send__form {
+    display: flex;
+}
+
+.mail-send__input {
+    width: 358px;
+    padding: 15px 16px;
+    background-color: var(--color-background);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    color: var(--color-secondary);
+}
+
+
+.mail-send__button {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    gap: 10px;
+    cursor: pointer;
+    margin-left: 12px;
+    background-color: var(--color-brand);
+    color: var(--color-text-light);
+    fill: var(--color-text-light);
+    transition: box-shadow var(--time-trasform) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
