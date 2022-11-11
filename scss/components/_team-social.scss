@@ -1,11 +1,10 @@
 .team-social {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
-}
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
 
-.team-social__link {
+  &__link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -14,15 +13,17 @@
     background-color: var(--color-text-light);
     border-radius: 50%;
     color: var(--color-img);
-    transition: color var(--time-trasform) var(--timing-function), background-color var(--time-trasform) var(--timing-function);
+    transition: color var(--time-trasform) var(--timing-function),
+      background-color var(--time-trasform) var(--timing-function);
 
     &:hover,
     &:focus {
-        background-color: var(--color-brand);
-        color: var(--color-text-light);
+      background-color: var(--color-brand);
+      color: var(--color-text-light);
     }
-}
+  }
 
-.team-social__icon {
+  &__icon {
     fill: currentColor;
+  }
 }

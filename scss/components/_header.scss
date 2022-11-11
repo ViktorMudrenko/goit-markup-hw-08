@@ -1,8 +1,8 @@
 .header {
-    border-bottom: 1px solid rgba(236, 236, 236, 1)
-}
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 
-.header__container {
+  &__container {
     display: flex;
     align-items: center;
+  }
 }

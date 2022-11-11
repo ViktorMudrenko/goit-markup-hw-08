@@ -1,20 +1,19 @@
-.form__label {
+.form {
+  &__label {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.01em;
     color: var(--color-secondary);
-}
+  }
 
-.form__contact {
+  &__contact {
     position: relative;
     margin-bottom: 10px;
-}
+  }
 
-
-
-.form__input {
+  &__input {
     height: 40px;
     width: 100%;
     padding: 11px 12px;
@@ -25,24 +24,24 @@
     transition: border-color var(--time-trasform) var(--timing-function);
     &:hover,
     &:focus {
-        border-color: var(--color-brand);
+      border-color: var(--color-brand);
     }
-}
+  }
 
-.form__icon {
+  &__icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill var(--time-trasform) var(--timing-function);
-}
+  }
 
-.form__input:hover+.form__icon,
-.form__input:focus+.form__icon {
+  &__input:hover + &__icon,
+  &__input:focus + &__icon {
     fill: var(--color-brand);
-}
+  }
 
-.form__coment {
+  &__coment {
     display: block;
     font-size: 12px;
     line-height: 1.67;
@@ -56,13 +55,14 @@
     outline: none;
     resize: none;
     transition: border-color var(--time-trasform) var(--timing-function);
-    
+
     &::placeholder {
-        color: rgba(117, 117, 117, 0.5);
+      color: rgba(117, 117, 117, 0.5);
     }
 
     &:hover,
     &:focus {
-        border-color: var(--color-brand);
+      border-color: var(--color-brand);
     }
+  }
 }

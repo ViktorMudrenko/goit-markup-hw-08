@@ -1,25 +1,26 @@
 .close-button {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    background-color: var(--color-text-light);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    top: 8px;
-    right: 8px;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
-    transition: color var(--time-trasform) var(--timing-function);
-    &:hover,
-    &:focus {
-        color: var(--color-brand);
-    }
-}
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-text-light);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  transition: color var(--time-trasform) var(--timing-function);
 
-.close-button__icon {
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+
+  &__icon {
     fill: currentColor;
+  }
 }

@@ -1,13 +1,12 @@
 .contacts {
-    display: flex;
-    margin-left: auto;
-}
+  display: flex;
+  margin-left: auto;
 
-.contacts__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
-}
+  }
 
-.contacts__link {
+  &__link {
     color: var(--color-secondary);
     font-weight: 500;
     font-size: 14px;
@@ -21,11 +20,12 @@
 
     &:hover,
     &:focus {
-        color: var(--color-brand);
+      color: var(--color-brand);
     }
-}
+  }
 
-.contacts__icon {
+  &__icon {
     fill: currentColor;
     margin-right: 10px;
+  }
 }

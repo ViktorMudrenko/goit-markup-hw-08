@@ -1,17 +1,17 @@
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 528px;
-    min-height: 581px;
-    background-color: var(--color-text-light);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 40px 40px;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--color-text-light);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 40px;
 
-.modal__lilte {
+  &__lilte {
     display: block;
     font-weight: 700;
     font-size: 20px;
@@ -20,9 +20,9 @@
     letter-spacing: 0.03em;
     color: var(--color-primary);
     margin-bottom: 12px;
-}
+  }
 
-.modal__button {
+  &__button {
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -42,6 +42,7 @@
 
     &:hover,
     &:focus {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+  }
 }
