@@ -1,5 +1,17 @@
 .container {
+  // max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include for-phone {
+    max-width: 480px;
+  }
+
+  @include for-tablet {
+    width: 768px;
+  }
+
+  @include for-desktop {
     width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  }
 }

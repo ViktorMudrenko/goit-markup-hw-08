@@ -3,15 +3,24 @@
   background-color: var(--color-pouring);
 
   &__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+
+    @include for-desktop {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
 
   &__list {
-    display: flex;
+    @include for-tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -19,14 +28,48 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-text-light);
+    max-width: 450px;
+    margin: 0 auto;
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+
+    @include for-tablet {
+      max-width: 354px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include for-desktop {
+      max-width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
   }
 
+  &__img {
+    max-width: 100%;
+  }
+
   &__wrapper {
-    padding: 30px 0;
+    padding: 30px 0 24px 0;
+
+    @include for-desktop {
+      padding: 30px 0;
+    }
   }
 
   &__name {
@@ -41,7 +84,7 @@
   &__text {
     text-align: center;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--color-secondary);
   }

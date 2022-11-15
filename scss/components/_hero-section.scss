@@ -1,25 +1,47 @@
 .hero {
-  padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
+  padding: 118px 0;
+  max-width: 767px;
+  margin: 0 auto;
+  max-height: 400px;
   background-color: var(--color-background);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-image.jpg);
-  margin: 0 auto;
+    url(/images/backgroung-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include for-tablet {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/backgroung-tablet.jpg);
+    max-width: 1199px;
+  }
+
+  @include for-desktop {
+    padding: 200px 0;
+    max-height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background-image.jpg);
+  }
 
   &__title {
-    width: 696px;
-    margin: auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
-    color: var(--color-text-light);
+    max-width: 360px;
+    margin: auto;
     text-align: center;
+    color: var(--color-text-light);
+
+    @include for-desktop {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {
-    width: 216px;
+    width: 200px;
     min-height: 50px;
     border-radius: 4px;
     margin: 0 auto;
@@ -29,10 +51,14 @@
     border: 0;
     background-color: var(--color-brand);
     color: var(--color-text-light);
+    cursor: pointer;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    cursor: pointer;
     font-weight: 700;
+
+    @include for-desktop {
+      width: 216px;
+    }
   }
 }

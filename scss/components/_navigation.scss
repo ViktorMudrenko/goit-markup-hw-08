@@ -1,6 +1,10 @@
 .navigation {
-  display: flex;
+  display: none;
   align-items: center;
+
+  @include for-tablet {
+    display: flex;
+  }
 
   &__list {
     display: flex;

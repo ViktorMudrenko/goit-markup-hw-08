@@ -1,11 +1,25 @@
 .address {
   font-style: normal;
+  display: flex;
+
+  &__list {
+    margin-bottom: 60px;
+  }
 
   &__item {
+    display: flex;
+    justify-content: center;
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
+    }
+
+    @include for-desktop {
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
     }
   }
+
   &__link {
     text-decoration: none;
     color: var(--color-text-light);

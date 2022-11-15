@@ -1,0 +1,109 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  z-index: 1;
+  background-color: var(--color-text-light);
+  transform: translateX(100%);
+  transition: transform var(--time-trasform);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__close-button {
+    position: absolute;
+    display: flex;
+    border: none;
+    padding: 0;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    background-color: var(--color-text-light);
+    transition: color var(--time-trasform) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+
+  &__navigation {
+    margin: auto;
+  }
+
+  &__pages {
+    margin-bottom: 306px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    color: var(--color-primary);
+    transition: color var(--time-trasform) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+
+  &__link--active {
+    color: var(--color-brand);
+  }
+
+  &__contacts {
+    margin-bottom: 64px;
+  }
+
+  &__contacts-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__contacts-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-brand);
+  }
+
+  &__contacts-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--color-secondary);
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__social-item {
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+  }
+
+  &__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--color-brand);
+  }
+}
