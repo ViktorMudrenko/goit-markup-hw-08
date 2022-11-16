@@ -41,7 +41,7 @@
   }
 
   &__button {
-    width: 200px;
+    max-width: 200px;
     min-height: 50px;
     border-radius: 4px;
     margin: 0 auto;
@@ -58,7 +58,7 @@
     font-weight: 700;
 
     @include for-desktop {
-      width: 216px;
+      max-width: 216px;
     }
   }
 }

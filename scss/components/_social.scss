@@ -1,6 +1,11 @@
 .social {
-  margin-bottom: 60px;
-  // margin-left: 70px;
+  @include for-phone {
+    margin-bottom: 60px;
+  }
+
+  @include for-desktop {
+    margin-left: 70px;
+  }
 
   &__text {
     text-align: center;
@@ -10,6 +15,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-text-light);
+
+    @include for-desktop {
+      text-align: start;
+    }
   }
 
   &__list {

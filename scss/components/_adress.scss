@@ -4,11 +4,19 @@
 
   &__list {
     margin-bottom: 60px;
+    text-align: center;
+
+    @include for-tablet {
+      margin-bottom: 0;
+    }
+
+    @include for-desktop {
+      text-align: start;
+      margin-bottom: 0;
+    }
   }
 
   &__item {
-    display: flex;
-    justify-content: center;
     &:not(:last-child) {
       margin-bottom: 8px;
     }

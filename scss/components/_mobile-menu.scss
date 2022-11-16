@@ -1,5 +1,7 @@
 .mobile-menu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,11 +34,7 @@
   }
 
   &__navigation {
-    margin: auto;
-  }
-
-  &__pages {
-    margin-bottom: 306px;
+    margin-bottom: auto;
   }
 
   &__link {
@@ -83,6 +81,7 @@
 
   &__social {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__social-item {

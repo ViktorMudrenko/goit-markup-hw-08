@@ -17,5 +17,9 @@
     @include for-tablet {
       display: none;
     }
+
+    @include for-desktop {
+      display: none;
+    }
   }
 }

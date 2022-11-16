@@ -3,11 +3,27 @@
   background-color: var(--color-background);
 
   &__container {
-    @include for-tablet {
-      align-items: baseline;
+    @include for-desktop {
       display: flex;
+      align-items: baseline;
+    }
+  }
+
+  &__connection {
+    @include for-tablet {
+      display: flex;
+      align-items: baseline;
       justify-content: space-between;
-      margin-bottom: 60px;
+      margin: 0 89px 60px 89px;
+
+      @include for-desktop {
+        align-items: baseline;
+      }
+    }
+
+    @include for-desktop {
+      display: flex;
+      align-items: baseline;
     }
   }
 
@@ -15,5 +31,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include for-desktop {
+      align-items: flex-start;
+    }
   }
 }
