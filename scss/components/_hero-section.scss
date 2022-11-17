@@ -5,13 +5,13 @@
   max-height: 400px;
   background-color: var(--color-background);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/backgroung-mobile.jpg);
+    url(../images/backgroung-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   @include for-tablet {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/backgroung-tablet.jpg);
+      url(../images/backgroung-tablet.jpg);
     max-width: 1199px;
   }
 
