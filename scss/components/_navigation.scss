@@ -2,6 +2,10 @@
   display: none;
   align-items: center;
 
+  @include for-desktop {
+    margin-left: 93px;
+  }
+
   @include for-tablet {
     display: flex;
   }
@@ -12,7 +16,6 @@
 
   &__list {
     display: flex;
-    margin-left: 93px;
   }
 
   &__item {

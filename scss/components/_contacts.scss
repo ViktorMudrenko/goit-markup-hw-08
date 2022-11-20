@@ -1,6 +1,9 @@
 .contacts {
   display: none;
-  margin-left: auto;
+
+  @include for-desktop {
+    margin-left: auto;
+  }
 
   @include for-tablet {
     display: block;

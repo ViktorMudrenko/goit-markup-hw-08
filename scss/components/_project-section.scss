@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   gap: 30px;
 
+  @include for-phone {
+    justify-content: center;
+  }
+
   &__item {
     max-width: 450px;
 
@@ -24,7 +28,9 @@
 
   &__link {
     text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     &:hover,
     &:focus {
@@ -77,6 +83,7 @@
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: 0;
+    flex-grow: 1;
   }
 
   &__title {
