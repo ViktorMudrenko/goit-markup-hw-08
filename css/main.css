@@ -788,7 +788,8 @@ img {
   }
 }
 .hero__button {
-  max-width: 200px;
+  padding: 10px 24px;
+  min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
   margin: 0 auto;
@@ -835,8 +836,15 @@ img {
   color: var(--color-brand);
 }
 
-.mail-send {
-  margin-left: auto;
+@media (max-width: 767px) {
+  .mail-send {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .mail-send {
+    margin-left: auto;
+  }
 }
 .mail-send__text {
   text-align: center;
@@ -995,6 +1003,7 @@ img {
   font-size: 40px;
   line-height: 1.8;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--color-primary);
   -webkit-transition: color var(--time-trasform) var(--timing-function);
   -o-transition: color var(--time-trasform) var(--timing-function);
@@ -1297,11 +1306,6 @@ img {
   }
 }
 
-@media (max-width: 767px) {
-  .social {
-    margin-bottom: 60px;
-  }
-}
 @media (min-width: 1200px) {
   .social {
     margin-left: 70px;

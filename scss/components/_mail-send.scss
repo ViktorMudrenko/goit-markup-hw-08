@@ -1,5 +1,11 @@
 .mail-send {
-  margin-left: auto;
+  @include for-phone{
+    margin-top: 60px;
+  }
+
+  @include for-desktop{
+    margin-left: auto;
+  }
 
   &__text {
     text-align: center;

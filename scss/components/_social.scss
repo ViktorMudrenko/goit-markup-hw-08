@@ -1,8 +1,4 @@
 .social {
-  @include for-phone {
-    margin-bottom: 60px;
-  }
-
   @include for-desktop {
     margin-left: 70px;
   }
