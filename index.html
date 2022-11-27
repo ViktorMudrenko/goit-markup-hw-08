@@ -88,7 +88,7 @@
         <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="contacts__icon contacts__icon--mail">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -96,7 +96,7 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__icon contacts__icon--phone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -172,34 +172,37 @@
           <ul class="activity__list">
             <li class="activity__item">
               <img
-                srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" 
+                srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
                 src="./images/box1.jpg"
                 alt="написання коду"
                 width="370"
                 height="294"
                 class="activity__img"
+                loading="lazy"
               />
               <p class="activity__text">Десктопні додатки</p>
             </li>
             <li class="activity__item">
               <img
-                srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" 
+                srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
                 src="./images/box2.jpg"
                 alt="розробка додатків"
                 width="370"
                 height="294"
                 class="activity__img"
+                loading="lazy"
               />
               <p class="activity__text">Мобільні додатки</p>
             </li>
             <li class="activity__item">
               <img
-                srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" 
+                srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
                 src="./images/box3.jpg"
                 alt="стилістика та дизайн"
                 width="370"
                 height="294"
                 class="activity__img"
+                loading="lazy"
               />
               <p class="activity__text">Дизайнерські рішення</p>
             </li>
@@ -215,23 +218,29 @@
               <picture class="team__img">
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/product_designer-mobile.jpg 1x, ./images/product_designer-mobile@2x.jpg 2x"
+                  srcset="
+                    ./images/product_designer-mobile.jpg    1x,
+                    ./images/product_designer-mobile@2x.jpg 2x
+                  "
                   type="image/jpeg"
                 />
                 <source
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  srcset="./images/product_designer-tablet.jpg 1x, ./images/product_designer-tablet@2x.jpg 2x"
+                  srcset="
+                    ./images/product_designer-tablet.jpg    1x,
+                    ./images/product_designer-tablet@2x.jpg 2x
+                  "
                   type="image/jpeg"
                 />
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images/product_designer-desktop.jpg 1x, ./images/product_designer-desktop@2x.jpg 2x"
+                  srcset="
+                    ./images/product_designer-desktop.jpg    1x,
+                    ./images/product_designer-desktop@2x.jpg 2x
+                  "
                   type="image/jpeg"
                 />
-                <img
-                  src="./images/product_designer.jpg"
-                  alt="Ігор Дем'яненко"
-                />
+                <img src="./images/product_designer.jpg" alt="Ігор Дем'яненко" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
@@ -272,22 +281,29 @@
               <picture class="team__img">
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/frontend_developer-mobile.jpg 1x, ./images/frontend_developer-mobile@2x.jpg 2x"
+                  srcset="
+                    ./images/frontend_developer-mobile.jpg    1x,
+                    ./images/frontend_developer-mobile@2x.jpg 2x
+                  "
                   type="image/jpeg"
                 />
                 <source
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  srcset="./images/frontend_developer-tablet.jpg 1x, ./images/frontend_developer-tablet@2x.jpg 2x"
+                  srcset="
+                    ./images/frontend_developer-tablet.jpg    1x,
+                    ./images/frontend_developer-tablet@2x.jpg 2x
+                  "
                   type="image/jpeg"
                 />
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images/frontend_developer-desktop.jpg 1x, ./images/frontend_developer-desktop@2x.jpg 2x"
+                  srcset="
+                    ./images/frontend_developer-desktop.jpg    1x,
+                    ./images/frontend_developer-desktop@2x.jpg 2x
+                  "
                   type="image/jpeg"
                 />
-                <img 
-                  src="./images/frontend_developer.jpg" 
-                  alt="Ольга Рєпіна" />
+                <img src="./images/frontend_developer.jpg" alt="Ольга Рєпіна" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Рєпіна</h3>
@@ -341,9 +357,7 @@
                   srcset="./images/marketing-desktop.jpg 1x, ./images/marketing-desktop@2x.jpg 2x"
                   type="image/jpeg"
                 />
-                <img 
-                  src="./images/marketing.jpg" 
-                  alt="Микола Тарасов"/>
+                <img src="./images/marketing.jpg" alt="Микола Тарасов" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
@@ -394,12 +408,13 @@
                 />
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images/ui_designer-desktop.jpg 1x, ./images/ui_designer-desktop@2x.jpg 2x"
+                  srcset="
+                    ./images/ui_designer-desktop.jpg    1x,
+                    ./images/ui_designer-desktop@2x.jpg 2x
+                  "
                   type="image/jpeg"
                 />
-                <img 
-                  src="./images/ui_designer.jpg" 
-                  alt="Михайло Єрмаков" />
+                <img src="./images/ui_designer.jpg" alt="Михайло Єрмаков" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
@@ -625,6 +640,12 @@
       </div>
     </div>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

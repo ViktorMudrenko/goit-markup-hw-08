@@ -30,8 +30,8 @@
   &__link {
     color: var(--color-secondary);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
@@ -44,6 +44,8 @@
       color: var(--color-brand);
     }
     @include for-desktop {
+      font-size: 14px;
+      line-height: 1.14;
       &__item:not(:last-child) {
         margin-right: 50px;
       }
@@ -54,5 +56,23 @@
   &__icon {
     fill: currentColor;
     margin-right: 10px;
+  }
+
+  &__icon--mail {
+    width: 14px;
+    height: 12px;
+
+    @include for-desktop {
+      width: 16px;
+    }
+  }
+
+  &__icon--phone {
+    width: 10px;
+    height: 14px;
+
+    @include for-desktop {
+      height: 16px;
+    }
   }
 }
